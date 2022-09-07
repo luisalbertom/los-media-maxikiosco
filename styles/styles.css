@@ -1,0 +1,524 @@
+*{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+*{
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+html{
+  font-size: 62.5%;
+}
+body{
+  font-family: 'Times New Roman', Times, serif;
+}
+a{
+  text-decoration: none;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  color: black;
+ 
+}
+img{
+  width: 100%;
+}
+
+
+/*aqui comienza el body, header */
+
+
+  
+  
+.centrar {
+display: flex;
+flex-wrap: wrap;
+
+} 
+
+
+ul {
+    list-style: none;
+    font-size: 0;
+    background-color: #0cbbf0;
+    padding: 18px; 
+    margin-bottom:2%;
+    contain: cover;
+    border-radius: 15px;
+   
+    
+  }
+ 
+ 
+  
+  li {
+    display: inline-block;
+    width: 19%;
+    position: relative;
+    font-size: 14px;
+    margin: 0px;
+   
+
+  }
+  
+  li a {
+   
+    color: #ffffff;
+    font-size: 29px;
+    font-family:Georgia, 'Times New Roman', Times, serif ;
+    text-decoration: none;
+    justify-content: space-around;
+   
+   
+  }
+  
+  ul ul {
+    position: absolute;
+    display: none;
+    cursor: pointer;
+   
+   
+    
+  }
+  
+  ul ul li {
+    display: block;
+   
+  }
+  
+  ul li:hover ul {
+    display: block;
+    padding: 18px;
+   
+    
+  }
+  
+
+
+    
+
+    
+  
+  /* fin del header comienza el main index*/
+
+.titulos  {
+display: flex;
+justify-content: space-around;
+font-size: x-large;
+padding: 18px;
+font-size: 35px;
+
+}
+
+
+.lista{
+  margin-top: 20%px;
+padding: 18px;
+}
+ 
+  
+
+
+
+   .cigarro {  
+    margin: 5px;
+   border: 0px;
+   width: 395px;
+   height: 400px;
+   display: inline;
+   justify-content: space-between;
+  }
+
+  .catalogo{
+ 
+    display: flex;
+    justify-content: space-around;
+    
+    
+    
+    
+      }
+  
+  body {
+    background-image:url(/images/gomitas.jpg);
+    height: 1500px;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-bottom: 50px;
+    padding: 18px;
+    margin:15px;
+  }
+
+  .escondido ol li ul {
+    cursor: pointer;
+    margin: 15px;
+    padding: 18px;
+    
+  }
+  .escondido ol li{
+ 
+font-size: 18px;
+padding: 18px;
+  }
+
+  /* los media */
+
+  .textos {
+
+    display: flex;
+    flex-wrap: wrap;
+    padding: 10px;
+    margin: 10px;
+    margin-top: 70px; 
+    font-size: 20px;
+  }
+  
+.marcas {
+display: flex;
+justify-content: space-around;
+
+}
+.links{
+  font-size: 25px;
+  padding: 0px;
+  margin: 0px;
+  display: flex;
+  justify-content: center;
+  align-content: flex-start;
+}
+
+
+
+
+ 
+  
+
+
+
+  
+  
+      /* comienza el seccion*/
+    form fieldset {
+      background-color: rgb(0, 0, 0);
+      color: #858080;
+      border-radius: 20px;
+      padding: 18px;
+      display: flex;
+      align-content: space-around;
+
+    }
+    fieldset input{
+      border-radius: 8px;
+      
+    }
+    
+
+    
+    
+     
+      
+      
+    
+    
+    
+   
+
+    
+       /* comienza el footer*/
+  
+ 
+
+  .color li a{
+  color: black;
+    
+  }
+
+ footer ol li {
+  font-size: 18px;
+  padding: 6px;
+  
+  
+ }
+ footer a img  {
+  border-radius: 25px;
+  padding: 15px;
+  margin-top: 100px;
+  
+ } 
+
+ .body{
+  display: grid;
+  grid-template-areas: 
+  "header header header"
+  "productos productos productos"
+  "ubicacion ubicacion ubicacion"
+  "footer footer footer";
+  grid-template-rows: 2fr 3fr 2fr 1fr;
+  grid-template-columns: 1fr auto 1fr;
+  height: 100vh;
+  row-gap: 120px;
+  column-gap: 10px;   
+  
+}
+
+
+.ubicacion {
+  border: 05px solid;
+  grid-area: ubicacion;
+  display: flex;
+  justify-content:space-around;
+  padding: 18px;
+}
+
+.header{
+grid-area: header;
+position: fixed;
+    margin: 0px;
+    padding: 18px;
+    width: 1300px;
+    
+
+}
+
+
+
+.main{
+grid-area: productos;
+font-size: 18px;
+padding: 18px;
+}
+
+/* los media flex*/
+
+
+
+aside{
+  justify-content: center;
+  padding: 18px;
+}
+
+
+
+
+footer{
+  grid-area: footer; 
+  font-size: 15px;
+  padding: 18px;
+}
+ .redes img {
+  width: 150px;
+height: 150px
+}
+
+ /* media cuori - mobile*/
+
+ @media screen and (max-width: 480px) and (orientation: portrait) {
+  .body{
+    
+    grid-template-areas: 
+    "header "
+    "productos"
+    "ubicacion"
+    "footer ";
+    grid-template-rows: repeat (4, 1fr);
+    grid-template-columns: 1fr;
+    height: 100vh;
+    row-gap: 0px;
+    column-gap: 0px;  
+  
+    }
+
+.header{
+display: flex;
+align-content: space-between;
+width: 500px;
+height: 200px;
+margin: 0px;
+padding: 0px;
+left: 5px;
+  
+}
+.marcas{
+  display:block;
+  flex-wrap: wrap;
+}
+
+.centrar{
+
+padding: 05px;
+margin: 4px;
+align-content: space-between;
+font-size: 25px;
+
+
+}
+
+li{
+  width: 25%;
+}
+.titulos{
+  margin-top: 70px;
+  padding: 0px;
+  font-size: 25px;
+
+}
+.color li {
+  display: flex;
+  flex-wrap: wrap;
+  
+  margin: 10px;
+  padding: 15px;
+  
+  }
+  
+}
+  
+
+ 
+
+ /* mobile horizontal*/
+
+ @media screen and (max-width: 480px) and (orientation: landscape){
+.body{
+
+ 
+ grid-template-areas: 
+ "header header"
+ "productos ubicacion"
+ "footer footer";
+ grid-template-rows: repeat (3 , 1fr);
+ grid-template-columns: (2,1fr);
+ height: 100vh;
+ row-gap: 0px;
+ column-gap: 0px;  
+
+ }
+
+.header{
+display: flex;
+align-content: space-between;
+width: 700px;
+height: 200px;
+margin: 0px;
+padding: 0px;
+left: 60px;
+
+}
+.centrar{
+
+padding: 05px;
+margin: 4px;
+align-content: space-between;
+font-size: 25px;
+
+
+}
+.marcas{
+  display:block;
+  flex-wrap: wrap;
+}
+
+li{
+width: 25%;
+margin: 0px;
+padding: 0px;
+
+}
+.titulos{
+margin-top: 70px;
+padding: 0px;
+font-size: 25px;
+
+}
+
+.cigarro {
+width: 620px;
+height: 500px;
+padding: 0px;
+margin: 0px;
+
+}
+.color li {
+  display: flex;
+  flex-wrap: wrap;
+  
+  margin: 10px;
+  padding: 15px;
+  
+  }
+
+}
+
+
+
+
+ /* media cuori - tablet */
+
+ @media screen and (min-width: 481px) and (max-width: 1200px){
+  .body{
+    
+    grid-template-areas: 
+    "header header"
+    "productos ubicacion"
+    "footer footer";
+    grid-template-rows: repeat (3 , 1fr);
+    grid-template-columns: (2,1fr);
+    height: 100vh;
+    row-gap: 0px;
+    column-gap: 0px;  
+  
+    }
+
+.header{
+display: flex;
+align-content: space-between;
+width: 700px;
+height: 200px;
+margin: 0px;
+padding: 0px;
+left: 60px;
+  
+}
+.marcas{
+  display:block;
+  flex-wrap: wrap;
+}
+.centrar{
+
+padding: 05px;
+margin: 4px;
+align-content: space-between;
+font-size: 25px;
+
+
+}
+
+li{
+  width: 25%;
+  margin: 0px;
+  padding: 0px;
+  
+}
+.titulos{
+  margin-top: 70px;
+  padding: 0px;
+  font-size: 25px;
+
+}
+
+.cigarro {
+  width: 620px;
+  height: 500px;
+  padding: 0px;
+  margin: 0px;
+
+}
+.color li {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 10px;
+  padding: 15px;
+  
+  }
+
+}
