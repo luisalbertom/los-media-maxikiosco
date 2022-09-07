@@ -203,7 +203,6 @@ justify-content: space-around;
       color: #858080;
       border-radius: 20px;
       padding: 18px;
-      display: flex;
       align-content: space-around;
 
     }
@@ -304,6 +303,8 @@ footer{
   grid-area: footer; 
   font-size: 15px;
   padding: 18px;
+  width: 1200px;
+  
 }
  .redes img {
   width: 150px;
