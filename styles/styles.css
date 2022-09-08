@@ -138,7 +138,7 @@ padding: 18px;
       }
   
   body {
-    background-image:url(/images/gomitas.jpg);
+    background-image:url(../images/gomitas.jpg);
     height: 1500px;
     background-attachment: fixed;
     background-position: center;
