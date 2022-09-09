@@ -208,10 +208,27 @@ justify-content: space-around;
     }
     fieldset input{
       border-radius: 8px;
-      
+      display: flex;
+
     }
     
-
+    .transition {
+    border: none;
+    padding: none;
+    padding: 10px;
+    background-color: #2665b8;
+    border-radius: 09px;
+    border-bottom: 03px solid rgb(6, 58, 153);
+    transition:padding 0.5s;
+    background-color: 2s;
+    border-bottom: 3s;
+    }
+    .transition input:hover{
+      padding: 08px;
+      border-radius: none;
+      margin: none;
+      
+    }
     
     
      
